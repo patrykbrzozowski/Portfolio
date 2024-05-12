@@ -1,0 +1,16 @@
+$small: 300px;
+$medium: 900px;
+
+.img-resp {
+  width: auto;
+  height: 21rem;
+  @media screen and (max-width: $small) {
+    height: 15rem;
+  }
+  @media screen and (max-width: $medium) {
+    height: 19rem;
+  }
+  @media screen and (min-width: $medium) {
+    height: 25rem;
+  }
+}
