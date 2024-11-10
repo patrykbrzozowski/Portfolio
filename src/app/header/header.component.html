@@ -40,7 +40,7 @@
             >{{ "Strona główna" | uppercase }}
           </a>
         </li>
-        <li
+        <!-- <li
           class="nav-item nav mx-2"
           routerLinkActive="actives"
           [routerLinkActiveOptions]="linkActiveOptions"
@@ -52,8 +52,8 @@
             (click)="isMenuCollapsed = true"
             >{{ "O mnie" | uppercase }}
           </a>
-        </li>
-        <li
+        </li> -->
+        <!-- <li
           class="nav-item nav mx-2"
           routerLinkActive="actives"
           [routerLinkActiveOptions]="linkActiveOptions"
@@ -66,8 +66,8 @@
           >
             {{ "Skills" | uppercase }}
           </a>
-        </li>
-        <li
+        </li> -->
+        <!-- <li
           class="nav-item nav mx-2"
           routerLinkActive="actives"
           [routerLinkActiveOptions]="linkActiveOptions"
@@ -79,7 +79,20 @@
             (click)="isMenuCollapsed = true"
             >{{ "Wykształcenie" | uppercase }}
           </a>
-        </li>
+        </li> -->
+        <!-- <li
+          class="nav-item nav mx-2"
+          routerLinkActive="actives"
+          [routerLinkActiveOptions]="linkActiveOptions"
+        >
+          <a
+            class="nav-link text-light"
+            routerLink="home"
+            fragment="experience"
+            (click)="isMenuCollapsed = true"
+            >{{ "Doświadczenie" | uppercase }}
+          </a>
+        </li> -->
         <li
           class="nav-item nav mx-2"
           routerLinkActive="actives"
@@ -87,8 +100,7 @@
         >
           <a
             class="nav-link text-uppercase text-light"
-            routerLink="home"
-            fragment="contact"
+            routerLink="contact"
             (click)="isMenuCollapsed = true"
             >{{ "Contact" | uppercase }}
           </a>
@@ -100,9 +112,9 @@
             id="language"
             class="my-2 text-uppercase"
           >
-            <option class="text-uppercase">PL</option>
+            <!-- <option class="text-uppercase">PL</option> -->
             <option class="text-uppercase">EN</option>
-            <option class="text-uppercase">NO</option>
+            <!-- <option class="text-uppercase">NO</option> -->
           </select>
         </li>
       </ul>
