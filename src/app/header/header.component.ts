@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IsActiveMatchOptions } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -15,4 +16,10 @@ export class HeaderComponent {
   };
 
   isMenuCollapsed: boolean = true;
+
+  constructor(private _translateService: TranslateService) {}
+
+  changeLanguage(lang: string) {
+    this._translateService.use(lang);
+  }
 }

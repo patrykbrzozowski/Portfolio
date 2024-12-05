@@ -1,5 +1,5 @@
 <div class="container mt-5 text-white">
-  <h3 class="mb-3">Wykształcenie</h3>
+  <h3 class="mb-3">{{ "Education" | translate }}</h3>
   <div class="my-5">
     <div class="row gap-3 gap-md-0">
       <div class="col-sm-5 col-lg-2 d-flex">
@@ -12,11 +12,16 @@
       </div>
       <div class="col-sm-7 col-lg-10 text-white">
         <div class="text-center text-md-start">
-          <h6>Politechnika Warszawska</h6>
-          <p style="font-size: 0.7rem">10.2023 - 07.2025 | W trakcie</p>
-          <p class="mb-0">Inż. magister</p>
-          <p class="mb-0">Kierunek: Informatyka stosowana</p>
-          <p>Specjalizacja: Inżynieria oprogramowania</p>
+          <h6>{{ "WUT" | translate }}</h6>
+          <p style="font-size: 0.7rem">
+            10.2023 - 07.2025 | {{ "InProgress" | translate }}
+          </p>
+          <p class="mb-0">{{ "MasterOfEngineering" | translate }}</p>
+          <p class="mb-0">{{ "AppliedComputerScience" | translate }}</p>
+          <p>
+            {{ "Specialization" | translate }}:
+            {{ "SoftwareEngineering" | translate }}
+          </p>
         </div>
       </div>
     </div>
@@ -33,11 +38,16 @@
       </div>
       <div class="col-sm-7 col-lg-10 text-white">
         <div class="text-center text-md-start">
-          <h6>Szkoła Główna Gospodarstwa Wiejskiego w Warszawie</h6>
-          <p style="font-size: 0.7rem">10.2019 - 02.2023 | Skończone</p>
-          <p class="mb-0">Inżynier</p>
-          <p class="mb-0">Kierunek: Informatyka</p>
-          <p>Specjalizacja: Inżynieria systemów informacyjnych</p>
+          <h6>{{ "SGGW" | translate }}</h6>
+          <p style="font-size: 0.7rem">
+            10.2019 - 02.2023 | {{ "Completed" | translate }}
+          </p>
+          <p class="mb-0">{{ "BachelorOfEngineering" | translate }}</p>
+          <p class="mb-0">{{ "ComputerScience" | translate }}</p>
+          <p>
+            {{ "Specialization" | translate }}:
+            {{ "InformationSystemsEngineering" | translate }}
+          </p>
         </div>
       </div>
     </div>
