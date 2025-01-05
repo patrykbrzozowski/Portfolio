@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://patrykbrzozowski.pl/sitemap.xml
