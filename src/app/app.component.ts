@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -12,8 +13,20 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   constructor(
     private _elementRef: ElementRef,
-    private _translateService: TranslateService
-  ) {}
+    private _translateService: TranslateService,
+    private _meta: Meta,
+    private _title: Title
+  ) {
+    this._title.setTitle('Patryk Brzozowski');
+    this._meta.addTags([
+      { name: 'description', content: 'Patryk Brzozowski' },
+      {
+        name: 'keywords',
+        content: 'Patryk Brzozowski, Portfolio, .NET, .NET Developer',
+      },
+      { name: 'author', content: 'Patryk Brzozowski' },
+    ]);
+  }
 
   ngOnInit(): void {
     this._translateService.use(this._defaultLanguage);
