@@ -22,7 +22,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       { name: 'description', content: 'Patryk Brzozowski' },
       {
         name: 'keywords',
-        content: 'Patryk Brzozowski, Portfolio, .NET, .NET Developer',
+        content: 'Patryk Brzozowski, Portfolio, .NET, .NET Developer, programista',
       },
       { name: 'author', content: 'Patryk Brzozowski' },
     ]);
